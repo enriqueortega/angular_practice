@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="studentApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Kap dat ass</title>
+    <script type="text/javascript" src="/assets/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+  </head>
+  <body>
+    <p>
+      Something Cool
+    </p>
+    <div ng-controller="Controller">
+      <div ng-repeat="student in accounts">
+          <h1>{{ student.name }}</h1>
+          <img ng-src=" {{ student.linkedIn }} "/>
+          <p><a ng-href=" {{ student.github }} ">GitHub</a></p>
+      </div>
+
+    </div>
+
+  </body>
+</html>
